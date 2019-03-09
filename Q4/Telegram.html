@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Style -->
+    <style>
+        .split {
+            height: 80%;
+            font-size: 80%;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden;
+            padding-top: 0px;
+        }
+
+        .left {
+            top: 17%;
+            width: 22%;
+            left: 2%;
+        }
+
+        .right {
+            top: 17%;
+            width: 70%;
+            right: 2%;
+        }
+
+        .search-box {
+            height: 11%;
+            width: 100%;
+        }
+
+        .recents {
+            height: 50%;
+            width: 100%;
+        }
+
+        .contacts {
+            height: 33%;
+            width: 100%;
+        }
+
+        .status-box {
+            height: 10%;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        .chat-box {
+            height: 80%;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        .text-box {
+            height: 10%;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        .bordered {
+            border-style: solid;
+            border-color: cornflowerblue;
+            border-radius: 5px;
+        }
+
+        .bordered-bottom {
+            border-bottom-style: solid;
+            border-bottom-color: lightgray;
+        }
+
+        .collection {
+            margin: 0px;
+        }
+
+        .no-margin {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>    
+
+    <!-- Nav-bar goes below -->
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="row">
+                <div class="section">
+                    <img src="download.jpg" alt="" class="circle responsive-img hoverable col s1">
+                    <a class="barnd-logo"><h5>Telegram</h5></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Left pane -->
+    <div class="split left">
+        <div class="search-box bordered">
+            <div class="input-field" >
+                <i class="material-icons prefix">search</i>
+                <input id="search" type="text" class="validate">
+                <label for="search">Search</label>
+            </div>
+        </div>
+        <br>
+        <div class="recents bordered">
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>Recents</h5></li>
+                <li class="collection-item hoverable">Alvin</li>
+                <li class="collection-item hoverable">Alvin</li>
+                <li class="collection-item hoverable">Alvin</li>
+                <li class="collection-item hoverable">Alvin</li>
+            </ul>
+        </div>
+        <br>
+        <div class="contacts bordered">
+            <ul class="collection with-header">
+                <li class="collection-header"><h5>Contacts</h5></li>
+                <li class="collection-item hoverable">Alvin</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Right pane -->
+    <div class="split right bordered">
+        <div class="status-box bordered-bottom">
+            <div class="row section">
+                <i class="material-icons small col s1">person</i>
+                <h5 class="no-margin">Alvin</h5>
+            </div>
+        </div>
+        <div class="chat-box bordered-bottom"></div>
+        <div class="text-box">
+            <div class="input-field no-margin">
+                <i class="material-icons prefix">face</i>
+                <input placeholder="Type your message." id="message_box" type="text" class="validate">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
